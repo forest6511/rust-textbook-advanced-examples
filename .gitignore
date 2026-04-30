@@ -1,0 +1,11 @@
+/target
+**/*.rs.bk
+*.pdb
+.DS_Store
+.idea/
+.vscode/
+flamegraph.svg
+perf.data*
+*.profraw
+
+# Allow Cargo.lock at workspace root (binaries) but ignore in subdirectories if needed
