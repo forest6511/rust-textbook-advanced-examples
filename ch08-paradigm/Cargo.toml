@@ -9,3 +9,5 @@ repository.workspace = true
 publish = false
 
 [dependencies]
+tokio = { workspace = true }
+rayon = { workspace = true }

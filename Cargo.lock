@@ -74,6 +74,10 @@ dependencies = [
 [[package]]
 name = "ch08-paradigm"
 version = "0.1.0"
+dependencies = [
+ "rayon",
+ "tokio",
+]
 
 [[package]]
 name = "ch09-criterion"
