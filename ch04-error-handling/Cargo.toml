@@ -9,3 +9,5 @@ repository.workspace = true
 publish = false
 
 [dependencies]
+thiserror = { workspace = true }
+anyhow = { workspace = true }
