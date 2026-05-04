@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ja">
+<head><meta charset="utf-8"><title>sample</title></head>
+<body>
+<h1>サンプルページ</h1>
+<p>並列パースのベンチマーク用のページです。</p>
+<nav>
+  <ul>
+    <li><a href="/about">about</a></li>
+    <li><a href="/blog/2025/01/post-1">post 1</a></li>
+    <li><a href="/blog/2025/02/post-2">post 2</a></li>
+    <li><a href="/blog/2025/03/post-3">post 3</a></li>
+    <li><a href="/blog/2025/04/post-4">post 4</a></li>
+    <li><a href="/blog/2025/05/post-5">post 5</a></li>
+    <li><a href="/blog/2025/06/post-6">post 6</a></li>
+    <li><a href="/blog/2025/07/post-7">post 7</a></li>
+    <li><a href="/blog/2025/08/post-8">post 8</a></li>
+    <li><a href="/blog/2025/09/post-9">post 9</a></li>
+    <li><a href="/blog/2025/10/post-10">post 10</a></li>
+    <li><a href="/blog/2025/11/post-11">post 11</a></li>
+    <li><a href="/blog/2025/12/post-12">post 12</a></li>
+    <li><a href="/tags/rust">rust</a></li>
+    <li><a href="/tags/tokio">tokio</a></li>
+    <li><a href="/tags/rayon">rayon</a></li>
+    <li><a href="/tags/scraper">scraper</a></li>
+    <li><a href="/tags/criterion">criterion</a></li>
+    <li><a href="/tags/concurrency">concurrency</a></li>
+    <li><a href="/tags/perf">perf</a></li>
+  </ul>
+</nav>
+<article>
+  <p>長めのコンテンツを並べて、パース時間を稼ぎます。Rust の所有権モデルでは、データを「所有する」「借りる」「移動する」の三つの操作を区別します。</p>
+  <p>並行プログラミングでは、共有状態へのアクセスをどう調停するかが鍵になります。Mutex でクリティカルセクションを直列化する方法、メッセージパッシングで状態を 1 つの所有者に集約する方法、不変な値を Arc で共有する方法、それぞれのトレードオフを把握する必要があります。</p>
+  <p>非同期 I/O は CPU を待たせず多数の接続を捌くために生まれました。Tokio は Rust 標準の非同期ランタイムで、cooperative scheduling と work-stealing executor で多数の Future を効率よく実行します。</p>
+  <p>データ並列の rayon は CPU bound 処理を分割統治で並列化します。par_iter で逐次イテレータを並列に切り替え、ワーカースティーリングで負荷を均す仕組みです。</p>
+  <p>Web クローラはこれらの組み合わせで成り立ちます。HTTP I/O は async、HTML パースは CPU bound、SQLite 書き込みはブロッキング I/O です。各部品をどのプリミティブで扱うかが設計判断の核心です。</p>
+</article>
+<footer>
+  <a href="/sitemap">sitemap</a>
+  <a href="/contact">contact</a>
+  <a href="/privacy">privacy</a>
+</footer>
+</body>
+</html>

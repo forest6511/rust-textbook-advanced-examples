@@ -8,4 +8,37 @@ license.workspace = true
 repository.workspace = true
 publish = false
 
+[lib]
+name = "ch11_web_crawler"
+path = "src/lib.rs"
+
+[[bin]]
+name = "crawler"
+path = "src/main.rs"
+
 [dependencies]
+anyhow = { workspace = true }
+backon = { workspace = true }
+governor = { workspace = true }
+indicatif = { workspace = true }
+nonzero_ext = "0.3"
+parking_lot = { workspace = true }
+rayon = { workspace = true }
+reqwest = { version = "0.13", default-features = false, features = ["rustls", "rustls-native-certs", "json", "gzip", "http2"] }
+rusqlite = { workspace = true }
+scraper = { workspace = true }
+thiserror = { workspace = true }
+tokio = { workspace = true }
+tracing = { workspace = true }
+tracing-subscriber = { workspace = true, features = ["env-filter"] }
+url = "2"
+
+[dev-dependencies]
+criterion = { workspace = true }
+tempfile = "3"
+tracing-subscriber = { workspace = true, features = ["env-filter"] }
+wiremock = { workspace = true }
+
+[[bench]]
+name = "parse_strategies"
+harness = false
