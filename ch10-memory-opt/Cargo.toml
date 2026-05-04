@@ -9,3 +9,26 @@ repository.workspace = true
 publish = false
 
 [dependencies]
+smallvec = { workspace = true }
+bumpalo = { version = "3.20", features = ["collections"] }
+memmap2 = "0.9"
+dhat = "0.3"
+
+[dev-dependencies]
+criterion = { workspace = true }
+
+[[bench]]
+name = "capacity"
+harness = false
+
+[[bench]]
+name = "log_parser"
+harness = false
+
+[[bin]]
+name = "demo"
+path = "src/main.rs"
+
+[[example]]
+name = "dhat_profile"
+path = "examples/dhat_profile.rs"

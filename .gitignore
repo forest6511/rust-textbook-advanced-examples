@@ -7,5 +7,7 @@
 flamegraph.svg
 perf.data*
 *.profraw
+dhat-heap.json
+dhat-ad-hoc.json
 
 # Allow Cargo.lock at workspace root (binaries) but ignore in subdirectories if needed
