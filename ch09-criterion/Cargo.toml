@@ -9,3 +9,27 @@ repository.workspace = true
 publish = false
 
 [dependencies]
+
+[dev-dependencies]
+criterion = { workspace = true, features = ["async_tokio"] }
+tokio = { workspace = true }
+
+[[bench]]
+name = "fib"
+harness = false
+
+[[bench]]
+name = "group"
+harness = false
+
+[[bench]]
+name = "batched"
+harness = false
+
+[[bench]]
+name = "async_bench"
+harness = false
+
+[[bench]]
+name = "profile_target"
+harness = false

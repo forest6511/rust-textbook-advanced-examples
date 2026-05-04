@@ -16,7 +16,7 @@ members = [
 
 [workspace.package]
 edition = "2024"
-rust-version = "1.85"
+rust-version = "1.86"
 authors = ["森川 陽介"]
 license = "MIT"
 repository = "https://github.com/forest6511/rust-textbook-advanced-examples"
