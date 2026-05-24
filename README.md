@@ -1,8 +1,8 @@
 # 現場で使えるRust言語実践テクニック サンプルコード
 
-書籍『現場で使えるRust言語実践テクニック — 並行処理・パフォーマンス最適化・トレイト設計の実装パターン』（森川 陽介 著）の章別サンプルコードリポジトリ。
+書籍『[現場で使えるRust言語実践テクニック — 並行処理・パフォーマンス最適化・トレイト設計の実装パターン](https://www.amazon.co.jp/dp/B0GZJ3C983)』（森川 陽介 著 / Amazon Kindle）の章別サンプルコードリポジトリ。
 
-Vol.1（[Rust言語の教科書](https://github.com/forest6511/rust-textbook-examples)）の続編にあたる中級者向け実践書のコンパニオンリポジトリです。
+Vol.1（[Rust言語の教科書](https://www.amazon.co.jp/dp/B0GSHJ3PTQ) / [サンプルコード](https://github.com/forest6511/rust-textbook-examples)）の続編にあたる中級者向け実践書のコンパニオンリポジトリです。
 
 ## 動作要件
 
