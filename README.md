@@ -64,7 +64,7 @@ cargo fmt --all -- --check
 ## 関連書籍
 
 - **Vol.1**: [Rust言語の教科書](https://www.amazon.co.jp/dp/B0GSHJ3PTQ) — 入門書（基礎・所有権・基本型）
-- **Vol.2**: 現場で使えるRust言語実践テクニック（本書、出版予定）
+- **Vol.2**: [現場で使えるRust言語実践テクニック](https://www.amazon.co.jp/dp/B0GZJ3C983)（本書）
 
 ## ライセンス
 
